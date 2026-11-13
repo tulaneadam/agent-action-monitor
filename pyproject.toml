@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-action-monitor"
+version = "0.1.0"
+description = "Trusted monitoring for AI agent actions: suspicion scoring, audit-budget calibration and allow/defer/audit gating."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Adam Goldfine"}]
+requires-python = ">=3.10"
+keywords = ["ai-safety", "ai-control", "llm-agents", "monitoring", "security"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["action_monitor"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
