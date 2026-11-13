@@ -1,5 +1,7 @@
 # Agent Action Monitor
 
+[![tests](https://github.com/tulaneadam/agent-action-monitor/actions/workflows/tests.yml/badge.svg)](https://github.com/tulaneadam/agent-action-monitor/actions/workflows/tests.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)
+
 **Trusted monitoring for AI agents.** Score every action an AI agent proposes for signs of sabotage, calibrate thresholds to a human audit budget, and decide whether to **allow**, **defer** or **audit** the action before it runs.
 
 This is a small, practical implementation of the *trusted monitoring* protocol from AI control research (Greenblatt et al., 2023, *AI Control: Improving Safety Despite Intentional Subversion*). It ships with a labeled dataset of agent trajectories and an evaluation harness that reports how much sabotage a monitor catches at a given audit budget.
